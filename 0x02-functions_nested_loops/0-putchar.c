@@ -9,9 +9,9 @@
 int main(void)
 {
 	char chars[] = "_putchar\n";
-	int i;
+	unsigned int i;
 
-	for (i = 0; i < (int)sizeof(chars); i++)
+	for (i = 0; i < sizeof(chars); i++)
 		_putchar(chars[i]);
 	return (0);
 }
