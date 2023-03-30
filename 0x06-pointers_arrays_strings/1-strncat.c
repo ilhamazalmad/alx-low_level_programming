@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings with n bytes from src
+ * _strncat - concatenates two strings. with n bytes from src
  * @dest: fifrst param
  * @src: second param
  * @n: third param
