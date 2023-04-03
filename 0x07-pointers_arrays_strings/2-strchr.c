@@ -3,7 +3,7 @@
 /**
  * _strchr - function that locates a character in a string
  * @s: first param
- * @c second param
+ * @c: second param
  *
  * Return: the first occurrence of the character c or NULL
  */
@@ -20,8 +20,5 @@ char *_strchr(char *s, char c)
 			f = s + i - 1;
 		}
 	}
-	if (f == NULL)
-		return NULL;
-	else
-		return f;
+	return (f);
 }
