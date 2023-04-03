@@ -11,7 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	unsigned int i;
-	char *f;
+	char *f = NULL;
 
 	for (i = 0; i < sizeof(s); i++)
 	{
