@@ -13,6 +13,8 @@ char *_strchr(char *s, char c)
 	unsigned int i;
 	char *f = NULL;
 
+	if (s == NULL)
+		return (NULL);
 	for (i = 0; i < sizeof(s); i++)
 	{
 		if (s[i] == c)
