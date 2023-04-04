@@ -13,6 +13,10 @@ int main(void)
 	char *t;
 
 	t = _strpbrk(s, f);
-	printf("%s\n", t);
+        printf("res 1:%s\n", t);
+        t = _strpbrk("hellos,world", "ss");
+        printf("res 2:%s\n", t);
+        t = _strpbrk("fvz vzeze", "ss");
+        printf("res 3:%s\n", t);
 	return (0);
 }
