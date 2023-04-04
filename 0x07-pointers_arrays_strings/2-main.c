@@ -11,7 +11,7 @@ int main(void)
 	char *s = "hellon";
 	char *f;
 
-	f = _strchr(s, 'n');
+	f = _strchr(s, 'l');
 	if (f != NULL)
 	{
 		printf("the result: %s\n", f);
