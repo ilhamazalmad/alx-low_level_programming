@@ -15,7 +15,7 @@ unsigned int _strspn(char *s, char *accept)
 
 	if (*s)
 	{
-		for (i = 0; i < sizeof(s); i++)
+		for (i = 0; i < strlen(s); i++)
 		{
 			if (strchr(accept, s[i]))
 				size++;
