@@ -10,7 +10,7 @@
 
 int calcul_sqrt(int n, int i)
 {
-	if (_pow_recursion(i, 2) == n)
+	if ((i * i) == n)
 		return (i);
 	if (++i <= (n / 2))
 		return (calcul_sqrt(n, i++));
