@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0;
 
 	if (s1 == NULL && s2 == NULL)
-		return (NULL);
+		return ("");
 	if (s1 == NULL)
 	{
 		s = malloc(strlen(s2) + 1);
