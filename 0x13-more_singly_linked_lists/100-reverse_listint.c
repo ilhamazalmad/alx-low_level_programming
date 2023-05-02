@@ -18,11 +18,21 @@ listint_t *reverse_listint(listint_t **head)
 		return (NULL);
 	if ((*head)->next == NULL)
 		return (*head);
-	list = (*head);
-	while (list)
+	while (*head)
 	{
-		tmp = add_nodeint(&tmp, list->n);
-		list = list->next;
+		if (tmp == NULL)
+		{
+			tmp = (*head);
+			*head = (*head)->next;
+			tmp->next = NULL;
+		}
+		else
+		{
+			list = (*head);
+			*head = (*head)->next;
+			list->next = tmp;
+			tmp = list;
+		}
 	}
 	*head = tmp;
 
