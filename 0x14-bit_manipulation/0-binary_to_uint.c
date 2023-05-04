@@ -42,8 +42,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		if (b[i] == '1')
-			sum += (int)pow_num(2, size - i - 1);
+		sum += (b[i] - '0') * (int)pow_num(2, size - i - 1);
 	}
 	return (sum);
 }
