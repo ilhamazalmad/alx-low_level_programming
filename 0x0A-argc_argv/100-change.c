@@ -15,6 +15,7 @@ int main(int argc, char *argv[])
 	int i = 0, sum = 0;
 	int coins[5] = {25, 10, 5, 2, 1};
 	int nbr;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
